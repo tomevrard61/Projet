@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>MonMarché — Accueil</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <a class="brand" href="index.html">
+      <div class="logo">MM</div>
+      <div>
+        <div class="site-title">MonMarché</div>
+        <div style="font-size:12px;color:var(--muted)">Achetez, vendez, trouvez</div>
+      </div>
+    </a>
+
+    <div class="search">
+      <input type="search" placeholder="Rechercher des annonces, ex: vélo, iPhone, canapé...">
+    </div>
+
+    <div class="actions">
+      <button class="button">Déposer une annonce</button>
+      <button class="icon-btn" title="Favoris">❤️</button>
+      <button class="icon-btn" title="Messages">💬</button>
+    </div>
+  </header>
+
+  <nav class="nav" aria-label="Catégories">
+    <a href="index.html">Accueil</a>
+    <a href="listings.html">Toutes les annonces</a>
+    <a href="contact.html">Contact</a>
+    <a href="#">Aide</a>
+  </nav>
+
+  <main>
+    <section class="hero">  
+      <div class="left">
+        <h1>Le meilleur du marché, près de chez vous</h1>
+        <p>Découvre des milliers d'annonces : high-tech, mobilier, véhicules, loisirs. Parfait pour vendre ou dénicher une bonne affaire.</p>
+        <div class="cta">
+          <a class="button" href="listings.html">Voir toutes les annonces</a>
+          <a class="button" style="background:#fff;color:var(--accent);border:1px solid #ffe6d0" href="#">Comment ça marche</a>
+        </div>
+      </div>
+      <div style="max-width:420px">
+        <div style="background:#fff;padding:16px;border-radius:12px;box-shadow:var(--shadow)">
+          <div style="font-weight:700;margin-bottom:8px">Annonce en vedette</div>
+          <a class="card" href="velo.html">
+          <div style="display:flex;gap:12px;align-items:center">
+            <div style="width:96px;height:72px;background-image:url('velo.avif')"></div>
+              <div style="font-weight:700">Vélo de ville - Bon état</div>
+              <div style="color:var(--muted)">350 € • Paris</div> 
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+          <div class="body">
+    <section style="padding:0 28px 28px">
+      <h2 style="margin:8px 0 16px">Annonces populaires</h2>
+      <div class="grid">
+        <a class="card" href="velo.html">
+          <div class="media" style="background-image:url('velo.avif')"></div>
+          <div class="body">
+            <div class="title">Vélo de ville — Bon état</div>
+            <div class="price"> 350€</div>
+            <div class="meta">Paris • 2 jours • 1 photo</div>
+          </div>
+        </a>
+
+        <a class="card" href="iphone.html">
+          <div class="media" style="background-image:url('https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=1200&q=80&auto=format&fit=crop')"></div>
+          <div class="body">
+            <div class="title">iPhone 14 — 128GB</div>
+            <div class="price">699 €</div>
+            <div class="meta">Neuf • Garantie • 5 km</div>
+          </div>
+        </a>
+
+        <a class="card" href="canape.html">
+          <div class="media" style="background-image:url('canape.avif')"></div>
+          <div class="body">
+            <div class="title">Canapé 3 places moderne</div>
+            <div class="price">250 €</div>
+            <div class="meta">Bon état • Livraison possible</div>
+          </div>
+        </a>
+
+        <a class="card" href="ps5.html">
+          <div class="media" style="background-image:url('ps5.jpg')"></div>
+          <div class="body">
+            <div class="title">PlayStation 5 • Comme neuve</div>
+            <div class="price">399 €</div>
+            <div class="meta">Accessoires inclus • 1 an</div>
+          </div>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    © 2026 MonMarché — Tous droits réservés
+  </footer>
+</body>
+</html>
