@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>MonMarché — Accueil</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <a class="brand" href="index.html">
+      <div class="logo">MM</div>
+      <div>
+        <div class="site-title">MonMarché</div>
+        <div style="font-size:12px;color:var(--muted)">Achetez, vendez, trouvez</div>
+      </div>
+    </a>
+
+      <span class="support"><em>Bienvenue sur le support MonMarché, besoin d'aide? Notre équipe est là pour vous!</em></span>    
+      
+   
+
+    <div class="actions">
+      <button class="button">Déposer une annonce</button>
+      <button class="icon-btn" title="Favoris">❤️</button>
+      <button class="icon-btn" title="Messages">💬</button>
+    </div>
+  </header>
+
+  <nav class="nav" aria-label="Catégories">
+    <a href="index.html">Accueil</a>
+    <a href="listings.html">Toutes les annonces</a>
+    <a href="contact.html">Contact</a>
+    <a href="#">Aide</a>
+  </nav>
+
+  <main class="container">
+
+  <section class="contact-card">
+    <h2>📞 Service client</h2>
+    <p><strong>Téléphone :</strong> 0 800 123 456 (appel gratuit)</p>
+    <p><strong>Email :</strong> support@monmarche.fr</p>
+    <p><strong>Horaires :</strong> Lun - Ven, 9h - 18h</p>
+  </section>
+
+  <section class="contact-card">
+    <h2>🎫 Ouvrir un ticket</h2>
+
+    <form class="ticket-form">
+      <label>
+        Nom
+        <input type="text" placeholder="Votre nom" required>
+      </label>
+
+      <label>
+        Email
+        <input type="email" placeholder="Votre email" required>
+      </label>
+
+      <label>
+        Sujet
+        <select required>
+          <option value="">Choisir un sujet</option>
+          <option>Problème de commande</option>
+          <option>Problème de paiement</option>
+          <option>Compte utilisateur</option>
+          <option>Autre</option>
+        </select>
+      </label>
+
+      <label>
+        Message
+        <textarea rows="5" placeholder="Décrivez votre problème..." required></textarea>
+      </label>
+
+      <button type="submit">Envoyer le ticket</button>
+    </form>
+  </section>
+
+</main>
+
+<footer class="footer">
+  © 2026 MonMarché — Tous droits réservés
+</footer>
+
+</body>
+</html>

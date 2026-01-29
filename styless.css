@@ -1,0 +1,289 @@
+body {
+    margin: 0 auto; /* Enlever les marges verticales */
+    font-family: Arial, Helvetica, sans-serif; 
+    color: white;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(fond.jpg); /* Ajouter un filtre foncé sur l'image*/
+    background-size: cover; /* Recouvrir entièrement l'élément*/
+    background-position: center;
+}
+header {
+    background-color: #141414;
+    display: flex; /* Pour que les enfants soit flexibles pour contrôler plus facilement leur position, alignement etc..*/
+    justify-content: space-between;/*Permet de créer des espaces égaux entre les éléments*/
+    align-items: center; /*Centre les éléments verticalement*/
+    padding: 15px 40px; /*Espace intérieur*/
+    position: sticky; /* Permet à un élément de rester collé à une position, quand on déroule la page le headder reste afficher à l'écran*/
+    top: 0; /*Pour que l'élément soit collé en haut de la page*/
+}
+#logo {
+    font-size: 1.8em; /*1,8 fois la taille du parent*/
+    font-weight: bold;/*Texte en gras*/
+    color: #0998e5;
+    text-decoration: none; /* Enlève les décoration par défaut, ici le soulignement*/
+}
+#logo:active{ /*Style quand le lien est cliqué*/
+    color: yellow; 
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px; /* Espace horizontal*/
+    transition: color 0.3s; /* Petite animation quand la couleur change avec le hover*/
+}
+nav a:hover { /*Style quand la souris passe sur le lien*/
+    color: #0998e5;
+}
+.Bienvenue { 
+    text-align: center; /*Centre le texte au milieu de la section*/
+    padding: 100px 20px; /*Espace interne*/
+}
+.Bienvenue h1 {
+    font-size: 3em; /* Pour que le texte soit 3 fois plus grand que son parent*/
+    margin-bottom: 20px;/*Espace en dessous du texte*/
+}
+.Bienvenue p {
+    font-size: 1.2em;
+    color: #ccc;
+}
+.pages {
+    display: flex;
+    justify-content: center; /*Centre horizontalement tout les enfants*/
+    margin: 60px 0;
+    gap: 30px; /*Permet de créer un espace uniforme pour tout les enfants*/
+}
+.page-link {
+    background-color: #1c1c1c;
+    border: 1px solid #333; /*Bordure*/
+    padding: 30px;
+    border-radius: 10px; /*Pour arrondir les angles*/
+    width: 200px;/*Pour définir la largeur de l'élément*/
+    text-align: center;
+    transition: transform 0.3s, background-color 0.3s;
+}
+.page-link:hover {
+    background-color: #0998e5;
+    transform: scale(1.05); /*Agrandit l'élément de 5%*/
+}
+.page-link a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 30px;
+}
+footer {
+    text-align: center;
+    padding: 30px;
+    background-color: #141414;
+    color: #888;
+}
+/*le Css pour la page d'acceuil s'arrête ici*/
+
+/* Barre de recherche */
+.search-bar {
+    margin: 40px auto;
+    text-align: center;
+}
+
+.search-bar input {
+    padding: 10px 15px;
+    width: 250px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 10px;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #0998e5;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-bar button:hover {
+    background-color: #0574b0;
+}
+
+/* Titres de sections */
+.FilmsPopulaires h2,
+.FilmsNouveaux h2,
+.FilmsAvis h2 {
+    font-size: 2em;
+    margin: 40px 0 20px;
+    text-align: center;
+}
+
+/* La grille de films reste identique grâce à .pages et .page-link */
+/* Style des cartes de films */
+.film-card {
+    background-color: #1c1c1c;
+    border: 1px solid #333;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 200px;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.film-card:hover {
+    transform: scale(1.05);
+    background-color: #0998e5;
+}
+
+.film-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-bottom: 1px solid #333;
+}
+
+.film-card h3 {
+    text-align: center;
+    margin: 10px 0;
+    color: white;
+}
+
+/* Zone de description */
+.film-description {
+    background-color: rgba(20, 20, 20, 0.95);
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 30px auto;
+    max-width: 600px;
+    text-align: center;
+    display: none;
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.film-description h3 {
+    margin-bottom: 10px;
+    color: #0998e5;
+}
+
+.film-description p {
+    color: #ccc;
+}
+.Avertissement {
+    background-color: rgba(255, 0, 0, 0.2);
+    border: 1px solid red;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin: 40px auto;
+    width: 80%;
+}
+
+.form-compte {
+    background-color: rgba(20, 20, 20, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    display: inline-block;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.form-compte input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 5px;
+}
+
+.form-compte button {
+    width: 100%;
+    margin-top: 15px;
+    padding: 12px;
+    background-color: #0998e5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form-compte button:hover {
+    background-color: #0574b0;
+}
+/* Section FAQ */
+.faq {
+    background-color: rgba(20, 20, 20, 0.8);
+    border-radius: 10px;
+    padding: 40px;
+    margin: 50px auto;
+    width: 80%;
+}
+
+.faq h2 {
+    text-align: center;
+    color: #0998e5;
+    margin-bottom: 30px;
+}
+
+.faq-item {
+    background-color: #1c1c1c;
+    border: 1px solid #333;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.faq-item h3 {
+    color: #0998e5;
+    margin-bottom: 10px;
+}
+
+.faq-item p {
+    color: #ccc;
+}
+
+/* Formulaire de contact */
+.contact-support {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.form-support {
+    background-color: rgba(20, 20, 20, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.form-support input,
+.form-support textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.form-support button {
+    margin-top: 15px;
+    padding: 12px 20px;
+    background-color: #0998e5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form-support button:hover {
+    background-color: #0574b0;
+}
